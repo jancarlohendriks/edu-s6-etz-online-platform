@@ -4,8 +4,23 @@
 	height: 100vh;
 }
 
-.main {
+.content {
+	flex-basis: 75%;
+	padding-right: 7.5rem;
+	padding-bottom: 5rem;
+	overflow: auto;
+	// background-color: red;
+}
 
+.calls {
+	flex: 1;
+	padding: 0 2rem;
+}
+
+.main {
+	display: flex;
+	flex: 1;
+	padding: 5rem;
 }
 
 .aside {

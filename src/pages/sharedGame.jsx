@@ -1,5 +1,7 @@
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Head from 'next/head'
+import PageHeader from '@/components/PageHeader';
+import GameCard from '@/components/GameCard';
 
 export default function Home() {
   return (
@@ -11,7 +13,13 @@ export default function Home() {
       </Head>
 
 			<DefaultLayout>
-				Shared Game
+				<PageHeader title="Welkom Jane Doe" />
+				<div className="cards">
+					<GameCard />
+					<GameCard />
+					<GameCard />
+					<GameCard />
+				</div>
 			</DefaultLayout>
 
     </div>

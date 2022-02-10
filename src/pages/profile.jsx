@@ -1,5 +1,7 @@
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Head from 'next/head'
+import PageHeader from '@/components/PageHeader';
+import ProfileDetails from '@/components/ProfileDetails';
 
 export default function Home() {
   return (
@@ -11,7 +13,10 @@ export default function Home() {
       </Head>
 
 			<DefaultLayout>
-				Profile
+				<PageHeader title="Profiel van John Doe" />
+				<div className="contactList">
+					<ProfileDetails />
+				</div>
 			</DefaultLayout>
 
     </div>

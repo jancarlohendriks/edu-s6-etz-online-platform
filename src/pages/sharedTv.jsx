@@ -1,3 +1,4 @@
+import ImageRectangle from '@/components/ImageRectangle'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import Head from 'next/head'
 
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
 			<DefaultLayout>
-				SharedTv
+				<ImageRectangle />
 			</DefaultLayout>
 
     </div>

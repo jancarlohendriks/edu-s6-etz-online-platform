@@ -1,6 +1,7 @@
-import MainContent from '@/components/MainContent'
-import DefaultLayout from '@/layouts/DefaultLayout'
 import Head from 'next/head'
+import DefaultLayout from '@/layouts/DefaultLayout'
+import ProfileCard from '@/components/ProfileCard';
+import PageHeader from '@/components/PageHeader';
 
 export default function Home() {
   return (
@@ -12,7 +13,18 @@ export default function Home() {
       </Head>
 
 			<DefaultLayout>
-				<MainContent/>
+				<PageHeader title="Welkom Jane Doe" />
+				<div className="contactList">
+					<h3>Jouw kring</h3>
+					<div className="cards">
+						<ProfileCard />
+						<ProfileCard />
+						<ProfileCard />
+						<ProfileCard />
+						<ProfileCard />
+						<ProfileCard />
+					</div>
+				</div>
 			</DefaultLayout>
 
     </div>
