@@ -23,6 +23,6 @@ body {
 	}
 }
 
-li.active {
-	background-color: red;
+li.active::before {
+	background-color: var(--main-color);
 }
